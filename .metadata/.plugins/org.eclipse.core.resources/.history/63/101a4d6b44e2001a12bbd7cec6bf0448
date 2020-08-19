@@ -1,0 +1,18 @@
+package com.teamtreehouse;
+
+import java.nio.file.*;
+import org.apache.tika.Tika;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+	
+	private static final String FILE_TYPE = "text/csv";
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+    }
+}

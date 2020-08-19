@@ -1,0 +1,25 @@
+package com.teamtreehouse;
+
+import java.nio.file.*;
+import org.apache.tika.Tika;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+	
+	private static final String FILE_TYPE = "text/csv";
+	private static final String DIR_TO_WATCH = "/Users/ddj10/Downloads/tmp";
+	
+    public static void main( String[] args )
+    {
+    	
+    	Path dir = Paths.get(DIR_TO_WATCH);
+    	Tika tika = new Tika();
+    	WatchService watchService = FileSystems.getDefault().newWatchService();
+    	dir.register(watchService, ENTRY_CREATE);
+        System.out.println( "Hello World!" );
+    }
+}
