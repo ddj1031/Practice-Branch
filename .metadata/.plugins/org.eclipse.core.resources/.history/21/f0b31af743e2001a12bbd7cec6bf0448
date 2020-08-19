@@ -1,0 +1,15 @@
+package com.teamtreehouse;
+
+import java.nio.file.*;
+import java org.apache.tika.Tika;
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+    }
+}
